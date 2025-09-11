@@ -12,6 +12,8 @@ import serviceDrainUnclog from "@/assets/service-drain-unclog.jpg";
 import serviceToiletUnclog from "@/assets/service-toilet-unclog.jpg";
 import serviceSepticCleaning from "@/assets/service-septic-cleaning.jpg";
 import serviceGreaseTrap from "@/assets/service-grease-trap.jpg";
+import serviceSinkUnclog from "@/assets/service-sink-unclog.jpg";
+import serviceHydroJetting from "@/assets/service-hydro-jetting.jpg";
 
 const services = [
   {
@@ -30,7 +32,7 @@ const services = [
     icon: Utensils,
     title: "Desentupimento de Pia",
     description: "Acabe com a água que não desce. Desentupimos pias de cozinha e banheiro com total eficiência.",
-    image: serviceDrainUnclog
+    image: serviceSinkUnclog
   },
   {
     icon: Settings,
@@ -47,7 +49,8 @@ const services = [
   {
     icon: Waves,
     title: "Hidrojateamento",
-    description: "Limpeza profunda de tubulações com jatos de alta pressão, removendo toda a sujeira incrustada."
+    description: "Limpeza profunda de tubulações com jatos de alta pressão, removendo toda a sujeira incrustada.",
+    image: serviceHydroJetting
   }
 ];
 
@@ -72,7 +75,6 @@ const ServicesSection = () => {
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-primary/80 group-hover:bg-primary/60 transition-colors duration-300"></div>
                   <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
