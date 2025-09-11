@@ -3,22 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pronto-desentope-flow</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Desentupidora 24 Horas | 24Horas TEC - Atendimento Imediato</title>
+    <meta name="description" content="Desentupidora 24 horas com atendimento imediato. Orçamento grátis, visita técnica gratuita. Desentupimento de ralo, vaso, pia, esgoto. Cobrimos qualquer oferta!" />
+    <meta name="keywords" content="desentupidora, desentupimento, 24 horas, emergência, ralo, vaso, pia, esgoto, hidrojateamento, fossa" />
+    <meta name="author" content="24Horas TEC Desentupidora" />
+    <link rel="canonical" href="https://24horastec.com.br" />
 
-    <meta property="og:title" content="pronto-desentope-flow" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:title" content="Desentupidora 24 Horas | 24Horas TEC - Atendimento Imediato" />
+    <meta property="og:description" content="Desentupidora 24 horas com atendimento imediato. Orçamento grátis, visita técnica gratuita. Desentupimento de ralo, vaso, pia, esgoto." />
+    <meta property="og:url" content="https://24horastec.com.br" />
+    <meta property="og:image" content="https://24horastec.com.br/og-image.jpg" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="Desentupidora 24 Horas | 24Horas TEC - Atendimento Imediato" />
+    <meta name="twitter:description" content="Desentupidora 24 horas com atendimento imediato. Orçamento grátis, visita técnica gratuita." />
+    <meta name="twitter:image" content="https://24horastec.com.br/og-image.jpg" />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "24Horas TEC Desentupidora",
+      "description": "Serviços de desentupimento 24 horas com atendimento imediato",
+      "telephone": "+55-14-99999-9999",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bauru",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "$$",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "-22.3145",
+          "longitude": "-49.0608"
+        },
+        "geoRadius": "50000"
+      }
+    }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Chatwoot Script -->
+    <script>
+      window.chatwootSettings = {
+        "position": "right",
+        "type": "expanded_bubble",
+        "launcherTitle": "Fale conosco no chat"
+      };
+      (function(d,t) {
+        var BASE_URL="https://apps-chatwoot.5bz4b5.easypanel.host";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'KPrQqCnGFoCBrugLaENfgvZe',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
   </body>
 </html>
