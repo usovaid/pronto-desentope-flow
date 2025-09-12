@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Clock } from "lucide-react";
-import logo24horasTec from "@/assets/logo-24horas-tec-original.png";
+import logo24horasTec from "@/assets/logo-24horas-tec-new.png";
 
 const FooterSection = () => {
   return (
