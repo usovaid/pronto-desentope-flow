@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 // Declare Chatwoot types
 declare global {
   interface Window {
-    chatwootSDK?: {
+    $chatwoot?: {
       toggle: () => void;
     };
   }
@@ -56,8 +56,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       // Check if this is a "FALE CONOSCO" button and open Chatwoot
       if (typeof children === 'string' && children.includes('FALE CONOSCO')) {
         e.preventDefault();
-        if (window.chatwootSDK) {
-          window.chatwootSDK.toggle();
+        if (window.$chatwoot) {
+          window.$chatwoot.toggle();
         }
         return;
       }
