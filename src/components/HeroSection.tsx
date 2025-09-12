@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroPlumber from "@/assets/hero-plumber.jpg";
+import logo24horasTec from "@/assets/logo-24horas-tec.png";
 
 const HeroSection = () => {
   return (
@@ -14,6 +15,15 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        {/* Logo */}
+        <div className="mb-8 flex justify-center">
+          <img 
+            src={logo24horasTec} 
+            alt="24Horas TEC Desentupidora" 
+            className="h-24 md:h-32 lg:h-40 w-auto drop-shadow-2xl"
+          />
+        </div>
+        
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           Desentupidora 24 Horas em <span className="text-accent">Bauru</span>?<br />
           A <span className="text-accent">24Horas TEC</span> Resolve!
