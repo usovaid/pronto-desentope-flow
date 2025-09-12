@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroPlumber from "@/assets/hero-plumber.jpg";
-import logo24horasTec from "@/assets/logo-24horas-tec.png";
+import logo24horasTec from "@/assets/logo-24horas-tec-new.png";
 
 const HeroSection = () => {
   return (
